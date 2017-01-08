@@ -5,12 +5,12 @@ namespace LJLeandro.Pythagoras.Formulas
     public class Area
     {
         /* GLOSSARY : Square Area
-	    * 	'length' equals length of side.
-	    * 	'A' equals Area
+	    * 	'length'
+	    * 	'Area'
 	    * FORMULA
 	    * 	Area = length * length 
 	    * */
-        public static double CalculateSquare(double length)
+        public static double CalculateSquareArea(double length)
         {
             return Math.Pow(length, 2);
         }
@@ -22,7 +22,7 @@ namespace LJLeandro.Pythagoras.Formulas
 	    * FORMULA
 	    * 	Area = width * height
 	    * */
-        public static double CalculateRectangle(double width, double height)
+        public static double CalculateRectangleArea(double width, double height)
         {
             return width * height;
         }
@@ -34,7 +34,7 @@ namespace LJLeandro.Pythagoras.Formulas
 	    * FORMULA:
 	    * 	Area = PI * (radius * radius)
 	    * */
-        public static double CalculateCircle(double radius)
+        public static double CalculateCircleArea(double radius)
         {
             return Math.PI * Math.Pow(radius, 2);
         }
@@ -46,7 +46,7 @@ namespace LJLeandro.Pythagoras.Formulas
 	    * FORMULA:
 	    * 	Area = (baseTriangle * height) / 2
 	    * */
-        public static double CalculateTriangle(double height, double baseTriangle)
+        public static double CalculateTriangleArea(double height, double baseTriangle)
         {
             return (baseTriangle * height) / 2;
         }
@@ -58,12 +58,12 @@ namespace LJLeandro.Pythagoras.Formulas
 	    * FORMULA:
 	    * 	Area = baseParallelogram * height
 	    * */
-        public static double CalculateParallelogram(double baseParallelogram, double height)
+        public static double CalculateParallelogramArea(double baseParallelogram, double height)
         {
             return baseParallelogram * height;
         }
 
-        /* GLOSSARY
+        /* GLOSSARY : Trapezoid or Trapezium Area
 	    * 	'height'
 	    * 	'majorParallelSide'
 	    * 	'minorParallelSide'
@@ -71,7 +71,7 @@ namespace LJLeandro.Pythagoras.Formulas
 	    * FORMULA:
 	    * 	Area = ((majorParallelSide + minorParallelSide) / 2) * height
 	    * */
-        public static double calculateTrapezoidOrTrapezium(double height, double majorParallelSide, double minorParallelSide)
+        public static double calculateTrapezoidOrTrapeziumArea(double height, double majorParallelSide, double minorParallelSide)
         {
             return ((majorParallelSide + minorParallelSide) / 2) * height;
         }
